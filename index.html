@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Find Your Farmers Market</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Your styles should be called here -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+
+
+    <div class="shell">
+      <div class="photo">
+        <img src="images/ebt_market.jpg" alt="GrowNYC Cortelyou market advertising SNAP usage." />
+      </div>
+      <div class="container">
+
+        <h1>Which Farmers Markets Can You Use SNAP to Purchase Food?</h1>
+        <p class="byline">By Zachary Smith</p>
+      </div>
+      <div class="container">
+        <p>Warmer days are ahead for New York City. With the increase of temperature comes an increase in farmer markets throughout all five boroughs, many of which accept Supplemental Nutrition Assistance Program benefits for much of the available
+          fare.</p>
+        <p>While the number of SNAP benefit recipients has begun to decrease in New York City, there are still over 150,000 more recipients than before the pandemic put the city on PAUSE in March, on top of the approximate 1.5 million regular
+          recipients of the program.
+        </p>
+      </div>
+      <div class="container chart">
+        <iframe title="Total SNAP Recipients in NYC  in 2020" aria-label="chart" id="datawrapper-chart-L96iZ" src="https://datawrapper.dwcdn.net/L96iZ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;"
+          height="387"></iframe>
+        <script type="text/javascript">
+          ! function() {
+            "use strict";
+            window.addEventListener("message", (function(a) {
+              if (void 0 !== a.data["datawrapper-height"])
+                for (var e in a.data["datawrapper-height"]) {
+                  var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']");
+                  t && (t.style.height = a.data["datawrapper-height"][e] + "px")
+                }
+            }))
+          }();
+        </script>
+
+        <div class="container">
+          <p>As we enter Spring, the opportunity to buy fresh fruits and vegetable increases with the opening of seasonal farmer markets, greenmarkets, and farmer stands. 10 seasonal markets will open in May, and dozens more join in the following
+            months, joining the 39 year-round markets. </p>
+
+          <p>Many markets, like those operated by GrowNYC, accept SNAP benefits from shoppers. In 2020, SNAP sales at GrowNYC markets increased by 50% compared to the previous year due to the increase in SNAP benefactors and the organization's
+            participation in programs to further stretch those benefits.</p>
+
+          <p>Funded by Human Resources Administration and in partnership with the New York City Council, GrowNYC distributes Health Bucks to shoppers using SNAP. In 2021, the Health Bucks program provides $2 additional dollars directly to SNAP
+            shoppers for each $2 of SNAP spent, up to $10 per visit. Visit the information tent at the market to make the transaction.
+            For other markets, some farmers will take SNAP payments directly. </p>
+
+          <p>For other markets, some farmers will take SNAP payments directly. However, not every greenmarket in the city accepts SNAP benefits. To determine which farmers market is right for you, use the tool below to find a market in your borough
+            that, whether or not they accept a form of SNAP benefit, and when they are opened during the year. </p>
+
+        </div>
+
+
+        <!-- YOUR CONTENT GOES HERE -->
+        <!-- TC— I hid the maps as you suggested, removing the Active class in each item and then giving a blank value for each top level value for each category. But after doing that, I lose ability to operate the categories independently from each other, forcing the user to choose an option for each filter before anything shows up. I would like the filters to still run independently. How would I do that? -->
+        <div class="container market">
+          <h2>Find the Right Farmers Market for You</h2>
+          <p>This list is all farmer markets in New York City. Use the filters to narrow the list by borough, month of operation, whether the market accepts SNAP, or any combination therein.</p>
+          <div class="flex filter">
+            <div>
+              <select id="borough" class="filter">
+                <option value="">Borough</option>
+                <option value="bronx">Bronx</option>
+                <option value="brooklyn">Brooklyn</option>
+                <option value="manhattan">Manhattan</option>
+                <option value="queens">Queens</option>
+                <option value="staten">Staten Island</option>
+              </select>
+            </div>
+            <div>
+              <select id="month" class="filter">
+                <option value="">Month</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+            </div>
+            <div>
+              <select id="snap" class="filter">
+                <option value="">Accepts SNAP</option>
+                <option value="yes-snap">Yes</option>
+                <option value="no-snap">No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="container photo">
+            <section class="flex">
+              <div class="item   brooklyn july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2084850772626!2d-73.9695486847168!3d40.713426707218744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b5ffbbe9983%3A0xebde2100944a8e0a!2sDomino%20Park%20Greenmarket!5e0!3m2!1sen!2sus!4v1614701397482!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org">Domino Park Greenmarket</a><br>
+                  15 River St<br>
+                  Brooklyn, NY 11211<br>
+                  Season: July-November<br>
+                  Hours: Sun, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item   brooklyn july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.627406772533!2d-73.87905774940604!3d40.682177847275675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25dc7daf6b5e7%3A0x4676709856415300!2sCypress%20Hills%20Farmstand!5e0!3m2!1sen!2sus!4v1614701543198!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Cypress Hills Farm Stand</a><br>
+                  Fulton St. and Logan St.<br>
+                  Brooklyn, NY 11208<br>
+                  Season: July-November<br>
+                  Hours: Fri, 10am-5pm
+                </address>
+              </div>
+
+              <div class="item   brooklyn july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.4947739119907!2d-73.96296588570313!3d40.707123374167615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bdddb2d920b%3A0x60c799a1df10abd3!2s199%20Taylor%20St%2C%20Brooklyn%2C%20NY%2011211!5e0!3m2!1sen!2sus!4v1614702087421!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Williamsburg Greenmarket</a><br>
+                  199 Taylor St<br>
+                  Brooklyn, NY 11211<br>
+                  Season: July-November<br>
+                  Hours: Thu, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33112.095236391404!2d-73.94414628906712!3d40.818053500880964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f67b8ab11371%3A0xc424a14db0ba58c0!2sGrassroot%20Farmer&#39;s%20Market!5e0!3m2!1sen!2sus!4v1614702154302!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  Grass Roots Farmers' Market<br>
+                  West 145th St and Edgecombe Ave<br>
+                  New York, NY 10030<br>
+                  Season: July-November<br>
+                  Hours: Tues/Sat, 9am-4pm
+                </address>
+              </div>
+
+              <div class="item   brooklyn january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.589167484238!2d-73.98146104940673!3d40.66098574857108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b1b59ab551d%3A0xea0a543128a5fed1!2sBartel-Pritchard%20Square%20Greenmarket!5e0!3m2!1sen!2sus!4v1614702205371!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/brooklyn/bartel-pritchard-square-wed">Bartel-Pritchard Square Greenmarket</a>.<br>
+                  Prospect Park West and 14th Street<br>
+                  Brooklyn, NY 11215<br>
+                  Season: Year-round<br>
+                  Hours: Wed, 8am-3pm / Sun, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item   queens june july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.5696880357405!2d-73.77909694940877!3d40.59525285258581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26897308dcfc5%3A0x1022f2f966cc26bc!2sEdgemere%20Farm!5e0!3m2!1sen!2sus!4v1614702248835!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.edgemerefarm.org">Edgemere Farm Stand</a><br>
+                  385 Beach 45th Street<br>
+                  Queens, NY 11691<br>
+                  Season: June-November<br>
+                  Hours: Fri/Sat, 10am-3pm
+                </address>
+              </div>
+
+              <div class="item   brooklyn january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.0785787874197!2d-73.98605794940636!3d40.67223754788333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25afe176c33c7%3A0x80dfd9206243ff79!2sDown%20to%20Earth%20Park%20Slope%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1614702304283!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">Park Slope Farmers' Market</a><br>
+                  289 4th Street<br>
+                  Brooklyn, NY 11215<br>
+                  Season: Year-round<br>
+                  Hours: Sun 10am-3pm
+                </address>
+              </div>
+
+              <div class="item   brooklyn january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.5065841418186!2d-73.96799384940732!3d40.640762249806905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b313093b4ff%3A0x1196a9eafad72edb!2sCortelyou%20Greenmarket!5e0!3m2!1sen!2sus!4v1614702525309!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Cortelyou Greenmarket</a><br>
+                  1399 Cortelyou Rd<br>
+                  Brooklyn, NY 11226<br>
+                  Season: Year-round<br>
+                  Hours: Sun, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item   queens may june july august september october yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4578303144663!2d-73.92760794940381!3d40.75195404300639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f28cab8ccf9%3A0xd1aea06184351dd9!2sBrooklyn%20Grange!5e0!3m2!1sen!2sus!4v1614702565046!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.brooklyngrangefarm.com">Brooklyn Grange Farm Stand @ LIC</a><br>
+                  37-18 Northern Blvd.<br>
+                  Long Island City, NY 11101<br>
+                  Season: May-October<br>
+                  Hours: Sat, 10am-4pm
+                </address>
+              </div>
+
+              <div class="item   bronx june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.0332022869097!2d-73.94021974973636!3d40.805275139861685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f602c635794b%3A0x702ca17abcc0bd67!2sHarvest%20Home%20Farmer&#39;s%20Market!5e0!3m2!1sen!2sus!4v1614703300291!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home N Central Bronx Farmers' Market</a>.<br>
+                  Jerome Ave and East Mosholu Pkwy North<br>
+                  Bronx, NY 10467<br>
+                  Season: June-November<br>
+                  Hours: Wed, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   bronx july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.7884867723706!2d-73.92095224940121!3d40.83260933806434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f430da0a7d59%3A0x225468ee6a6405b3!2sBronxWorks!5e0!3m2!1sen!2sus!4v1614703480842!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  BronxWorks Farm Stand<br>
+                  1130 Grand Concourse<br>
+                  Bronx, NY 10456<br>
+                  Season: July-November<br>
+                  Hours: Thu, 10am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.129200954197!2d-73.92251724940002!3d40.86903873582956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f3f6cd46e56f%3A0x6155e34e26e65cea!2sInwood%20Greenmarket!5e0!3m2!1sen!2sus!4v1614703522057!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/manhattan/inwood">Inwood Greenmarket</a><br>
+                  Isham St and Seaman St<br>
+                  New York, NY 10034<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item   staten january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2076.8144988229456!2d-74.16359230189254!3d40.58322763816418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24c7861e1403f%3A0x81bd42a7e18f8786!2sStaten%20Island%20Mall%20-%20Lot%2011!5e0!3m2!1sen!2sus!4v1614705681715!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Staten Island Mall Greenmarket</a><br>
+                  2655 Richmond Ave<br>
+                  Staten Island, NY 10314<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item   staten january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.461823270572!2d-74.08000154940727!3d40.641749149746566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24e2d3a4c13f5%3A0x8f869c8a62911169!2sSaint%20George%20Greenmarket!5e0!3m2!1sen!2sus!4v1614705722017!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/staten-island/saint-george">Saint George Greenmarket</a><br>
+                  St Marks Pl and Hyatt St<br>
+                  Staten Island, NY 10301<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 9am-1pm
+                </address>
+              </div>
+
+              <div class="item   queens  june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.455030159916!2d-73.82891234940382!3d40.752015643002615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2606cc54650ed%3A0xbfd006bfdff9b4d4!2sDown%20to%20Earth%20Queens%20Botanical%20Garden%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1614704436046!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">Queens Botanical Garden Farmers' Market</a><br>
+                  Main St and Dahlia Ave<br>
+                  Flushing, NY 11355<br>
+                  Season: June-November<br>
+                  Hours: Fri, 8:30am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.965797338414!2d-73.96714808459217!3d40.80674537932163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f63c0250df5d%3A0x24b7a353e6264e5c!2sBroadway%20%26%20W%20114th%20St%2C%20New%20York%2C%20NY%2010025!5e0!3m2!1sen!2sus!4v1614703948924!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Columbia Greenmarket</a><br>
+                  Broadway and West 115th St<br>
+                  New York, NY 10027<br>
+                  Season: Year-round<br>
+                  Hours: Thu, 8am-5pm / Sun, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.5356077169627!2d-73.97054814940246!3d40.7942225404174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f62270f5baff%3A0xa0b6b56eacae5482!2s97th%20Street%20Greenmarket!5e0!3m2!1sen!2sus!4v1614704027016!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/manhattan/west-97">97th Street Greenmarket</a><br>
+                  West 97th St and Columbus Ave<br>
+                  New York, NY 10025<br>
+                  Season: Year-round<br>
+                  Hours: Fri, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item   brooklyn january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9254665351114!2d-73.95473864940483!3d40.71965724498321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2595b69e6c607%3A0x22607696dd0e41a2!2sMcCarren%20Park%20Greenmarket!5e0!3m2!1sen!2sus!4v1614701612053!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/brooklyn/greenpoint-sa">McCarren Park Greenmarket</a><br>
+                  N 12th Street and Driggs Ave<br>
+                  Brooklyn, NY 11222<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item   brooklyn june july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.8044257884117!2d-73.9396115494068!3d40.65624134886109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b6241eaff5b%3A0xb403916dafe8387c!2s681%20Clarkson%20Ave%2C%20Brooklyn%2C%20NY%2011203!5e0!3m2!1sen!2sus!4v1614703673764!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  Urban Oasis Farmers' Market
+                  681 Clarkson Ave<br>
+                  Brooklyn, NY 11203<br>
+                  Season: June-November<br>
+                  Hours: Wed, 2pm-5:30pm
+                </address>
+              </div>
+
+              <div class="item   queens  january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12089.53265324753!2d-73.8877581!3d40.7535966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x806d9f9ce581ab2f!2sJackson%20Heights%20Greenmarket!5e0!3m2!1sen!2sus!4v1614730162353!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/queens/jackson-heights">Jackson Heights Greenmarket</a><br>
+                  78-99 34th Ave<br>
+                  Jackson Heights, NY 11372<br>
+                  Season: Year-round<br>
+                  Hours: Sun, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item   queens  january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.683266024537!2d-73.92392534930936!3d40.7469944792266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f2784b3a1e5%3A0x40298383793d867f!2sSunnyside%20Greenmarket!5e0!3m2!1sen!2sus!4v1614732635000!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/queens/sunnyside">Sunnyside Greenmarket</a><br>
+                  Skillman Ave and 42nd St<br>
+                  Sunnyside, NY 11104<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item   queens  may june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.430966208674!2d-73.7756996493099!3d40.73054157922836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261a224788649%3A0xccb608b09a9de9e8!2sDown%20to%20Earth%20Cunningham%20Park%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1614733701420!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">Cunningham Park Farmers' Market</a><br>
+                  196-10 Union Turnpike<br>
+                  Fresh Meadows, NY 11366<br>
+                  Season: May-November<br>
+                  Hours: Sun, 9am-2pm
+                </address>
+              </div>
+
+              <div class="item   queens june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d755.639992972184!2d-73.862945!3d40.749707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fc7ac5a5a07%3A0xb05e98d21b3d3cd4!2sCorona%20Greenmarket!5e0!3m2!1sen!2sus!4v1614733813737!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Corona Greenmarket</a><br>
+                  Roosevelt Ave and 103rd St<br>
+                  Corona, NY 11368<br>
+                  Season: June-November<br>
+                  Hours: Fri, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item   queens  january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8262541324984!2d-73.84869054931026!3d40.721841179229266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e26bf9de337%3A0xc68b01c1d5121814!2sForest%20Hills%20Greenmarket!5e0!3m2!1sen!2sus!4v1614732658400!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/queens/forest-hills">Forest Hills Greenmarket</a><br>
+                  106-28 Queens Blvd<br>
+                  Queens, NY 11375<br>
+                  Season: Year-round<br>
+                  Hours: Sun, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item   queens  june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.7374447009583!2d-73.88766948459403!3d40.74580247932826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fabd1244a47%3A0x5e7f2bfb357181e2!2s41st%20Ave%20%26%2080th%20St%2C%20Queens%2C%20NY%2011373!5e0!3m2!1sen!2sus!4v1614733873608!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org">Elmhurst Hospital Greenmarket</a><br>
+                  41st Ave and 80th St<br>
+                  Elmhurst, NY 11373<br>
+                  Season: June-November<br>
+                  Hours: Tues, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   queens  june july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.716995490219!2d-73.82026254931091!3d40.70223007923146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c260c7f99f8a9d%3A0x76a8bab392b8990f!2s13420%20Jamaica%20Ave%2C%20Richmond%20Hill%2C%20NY%2011418!5e0!3m2!1sen!2sus!4v1614735709790!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  Jamaica Hospital Farm Stand<br>
+                  134-20 Jamaica Ave.<br>
+                  Jamaica, NY 11418<br>
+                  Season: June-November<br>
+                  Hours: Wed, 9am-4pm
+                  Season: July-November<br>
+                  Hours: Fri, 10:30am-3:30pm
+                </address>
+              </div>
+
+              <div class="item   queens july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.66126692489!2d-73.72419994930931!3d40.747478479226544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26272af45b7f7%3A0x707270c03232e06d!2sQueens%20County%20Farm%20Museum!5e0!3m2!1sen!2sus!4v1614740916372!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.queensfarm.org">Queens County Farm Museum Farm Stand</a><br>
+                  73-50 Little Neck Parkway<br>
+                  Queens, NY 11004<br>
+                  Season: July-November<br>
+                  Hours: Wed, 11am-3pm
+                </address>
+              </div>
+
+              <div class="item   queens july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.5681093030997!2d-73.82629550000001!3d40.756032300000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26149af095e45%3A0x5e12f6acb0887cb2!2sFlushing%20Greenmarket!5e0!3m2!1sen!2sus!4v1614741047627!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/greenmarket/queens/flushing">Flushing Greenmarket</a><br>
+                  Kissena Boulevard and Maple Avenue<br>
+                  Flushing, NY 11355<br>
+                  Season: July-November<br>
+                  Hours: Wed, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item   queens july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12092.883776698265!2d-73.8144868!3d40.7351636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe5dc6f2960cc0dba!2sQueens%20Community%20House-%20Pomonok%20Community%20Center!5e0!3m2!1sen!2sus!4v1614741318661!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.facebook.com/QCHFarmersMarket">Pomonok Community Farm Stand</a><br>
+                  67-09 Kissena Blvd<br>
+                  Flushing, NY 11367<br>
+                  Season: July-November<br>
+                  Hours: Wed, 9am-4pm
+                </address>
+              </div>
+
+              <div class="item   queens july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757.3994106825423!2d-73.7884918276474!3d40.594635918683196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2688eb0ee3fc9%3A0x3a8da9ac9403baff!2sRockaway%20Youthmarket!5e0!3m2!1sen!2sus!4v1614741835033!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.rytf.org">Rockaway Youth Task Force Farm Stand</a><br>
+                  310 Beach 58th Street<br>
+                  Far Rockway, NY 11691<br>
+                  Season: July-November<br>
+                  Hours: Sat, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item   queens july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.1600550457729!2d-73.80398160708074!3d40.717115556412246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c260e4ffaa3d1b%3A0xdb407bd85a4f672a!2s82-68%20164th%20St%2C%20Jamaica%2C%20NY%2011432!5e0!3m2!1sen!2sus!4v1614752132435!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.nychealthandhospitals.org">NYC Health+Hospitals Farmers' Market-164th Street</a><br>
+                  82-68 164th St<br>
+                  Jamaica, NY 11432<br>
+                  Season: July-November<br>
+                  Hours: Thu, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   queens july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.339139685214!2d-73.78799498503551!3d40.68852794698893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2612d1f89efd5%3A0xddc126da1ab1a6bd!2s114-02%20Guy%20R%20Brewer%20Blvd%2C%20Jamaica%2C%20NY%2011434!5e0!3m2!1sen!2sus!4v1614837019943!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.nychealthandhospitals.org/queens">NYC Health+Hospitals Farmers' Market-Guy R Brewer Blvd</a><br>
+                  114-02 Guy R Brewer Blvd<br>
+                  Jamaica, NY 11434<br>
+                  Season: July-November<br>
+                  Hours: Tues, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   queens july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d653.7641700621768!2d-73.90697220870341!3d40.70030189634876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAwLjgiTiA3M8KwNTQnMjMuNSJX!5e0!3m2!1sen!2sus!4v1614752462169!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Ridgewood GrowNYC Farm Stand</a><br>
+                  Myrtle Ave and Cypress Ave<br>
+                  Ridgewood, NY 11385<br>
+                  Season: July-November<br>
+                  Hours: Sat, 8:30am-3pm
+                </address>
+              </div>
+
+              <div class="item   queens july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.5550569723914!2d-73.90951894930845!3d40.77180997922396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f69282049af%3A0x6448f8afc76c4711!2sDitmars%20Park%20Farmstand!5e0!3m2!1sen!2sus!4v1614752503861!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Ditmars Park GrowNYC Farm Stand</a><br>
+                  22-00 Steinway St<br>
+                  Queens, NY 11105<br>
+                  Season: July-November<br>
+                  Hours: Sat, 9:30am-2pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12092.600489489607!2d-73.990226!3d40.7367221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e491fafbfbceda2!2sUnion%20Square%20Greenmarket!5e0!3m2!1sen!2sus!4v1614752706584!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/greenmarket">Union Square Greenmarket</a><br>
+                  Broadway and East 17th St<br>
+                  New York, NY 10003<br>
+                  Season: Year-round<br>
+                  Hours: Mon, Wed, Fri, Sat 8am-6pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4503691571927!2d-73.97035804930914!3d40.75211817922618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2591d5e6b1d25%3A0xac80b87313dfd229!2sDag%20Hammarskjold%20Plaza%20Greenmarket!5e0!3m2!1sen!2sus!4v1614752735201!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/manhattan/dag-hammarskjold">Dag Hammarskjold Plaza Greenmarket</a><br>
+                  East 47th St and Second Ave<br>
+                  New York, NY 10017<br>
+                  Season: Year-round<br>
+                  Hours: Wed 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.1512772775595!2d-73.97841824930813!3d40.78068827922293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f20806869%3A0x95141d2dea217dd6!2s77th%2F79th%20Street%20Greenmarket!5e0!3m2!1sen!2sus!4v1614752768805!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/manhattan/79th-street">79th Street Greenmarket</a><br>
+                  West 79th St and Columbus Ave<br>
+                  New York, NY 10024<br>
+                  Season: Year-round<br>
+                  Hours: Wed 9am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.049341763685!2d-74.01300484931035!3d40.71693027922999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1e8daa4f3f%3A0x35645f27b587a850!2sTribeca%20Greenmarket!5e0!3m2!1sen!2sus!4v1614752797985!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Tribeca Greenmarket</a><br>
+                  Greenwich St and Chambers St<br>
+                  New York, NY 10023<br>
+                  Season: Year-round<br>
+                  Hours: Wed, Sat 8am-3pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.469798248693!2d-73.98419984930835!3d40.773684779223856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f5408558a3%3A0xf8974e4db9c8bc74!2sTucker%20Square%20Greenmarket!5e0!3m2!1sen!2sus!4v1614752877386!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/manhattan/tuckerThu">Tucker Square Greenmarket</a><br>
+                  Columbus and West 66th St<br>
+                  New York, NY 10023<br>
+                  Season: Year-round<br>
+                  Hours: Thu, Sat, 8am-5pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1232299857757!2d-74.00782594930963!3d40.73731387922779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599f73100bf7%3A0x84776831452dbfab!2sAbingdon%20Square%20Greenmarket!5e0!3m2!1sen!2sus!4v1614752917822!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/manhattan/abingdon-square">Abingdon Square Greenmarket</a><br>
+                  Hudson St and W 12 St<br>
+                  New York, NY 10014<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.6344297978076!2d-73.98550094931007!3d40.72606347922885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25973abb6bf9d%3A0x4cc6622714e4f75e!2sTompkins%20Square%20Park%20Greenmarket!5e0!3m2!1sen!2sus!4v1614752948272!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/manhattan/tompkins-square">Tompkins Square Greenmarket</a><br>
+                  Avenue A and East 7th St<br>
+                  New York, NY 10009<br>
+                  Season: Year-round<br>
+                  Hours: Sun, 9am-5pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.455877685812!2d-73.95287514930837!3d40.773990879223774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258b9a261257d%3A0xca85e232dd0e4fda!2s82nd%20Street%20Greenmarket!5e0!3m2!1sen!2sus!4v1614752973550!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/manhattan/82nd-street">82nd Street Saint Stephen's Greenmarket</a><br>
+                  408 East 82nd Street<br>
+                  New York, NY 10128<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 9am-2:30pm
+                </address>
+              </div>
+
+              <div class="item   manhattan may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3915717136106!2d-73.98036824930992!3d40.7314085792283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25975d3ea14c1%3A0x8ee3bf7415b49e83!2sStuyvesant%20Town%20Greenmarket!5e0!3m2!1sen!2sus!4v1614753017784!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Stuyvesant Town Greenmarket</a><br>
+                  1 Stuyvesant Oval<br>
+                  New York, NY 10009<br>
+                  Season: May-December<br>
+                  Hours: Sun, 9:30am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5254.972022881386!2d-73.98914573742695!3d40.769111201208155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2591b2895511d%3A0xd28d6e10513c1316!2s57th%20Street%20Greenmarket!5e0!3m2!1sen!2sus!4v1614996067757!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">57th Street Greenmarket</a><br>
+                  891 Tenth Ave<br>
+                  New York, NY 10019<br>
+                  Season: June-December<br>
+                  Hours: Wed, Sat, 8am-5pm
+                </address>
+              </div>
+
+              <div class="item   manhattan june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.713266075202!2d-74.00299428503368!3d40.746334443452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b98a537657%3A0x2e1a6d760ef6d189!2sDown%20to%20Earth%20Chelsea%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1614996118128!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">Chelsea Farmers' Market</a><br>
+                  383 W 23rd Street<br>
+                  New York, NY 10011<br>
+                  Season: June-December<br>
+                  Hours: Sat, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item   manhattan june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.2081151476667!2d-73.94079244383482!3d40.81530701592816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f676e3b9c64f%3A0x30cb76824048b39c!2sMalcolm%20X%20Blvd%20%26%20W%20137th%20St%2C%20New%20York%2C%20NY%2010030!5e0!3m2!1sen!2sus!4v1614996313187!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Harlem Hospital Farmers' Market</a><br>
+                  137th Street and Lennox Avenue<br>
+                  New York, NY 10037<br>
+                  Season: June-November<br>
+                  Hours: Fri, 8am-6pm
+                </address>
+              </div>
+
+              <div class="item   manhattan june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.5708306698607!2d-73.94699624181948!3d40.780899694831085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258afbeccb29f%3A0x93829d88cfc16880!2s1790%201st%20Avenue%2C%20New%20York%2C%20NY%2010128!5e0!3m2!1sen!2sus!4v1614997059963!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">92nd Street Greenmarket</a><br>
+                  East 92nd St and First Ave<br>
+                  New York, NY 10128<br>
+                  Season: June-November<br>
+                  Hours: Sun, 9am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.7957101148354!2d-73.94910587081661!3d40.82394741355095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f664a5e177df%3A0xfb3746af04f30a86!2sAmsterdam%20Ave%20%26%20W%20143rd%20St%2C%20New%20York%2C%20NY%2010031!5e0!3m2!1sen!2sus!4v1614997332652!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://brotherhood-sistersol.org/programs/environmental-program">Hamilton Heights Green Youth Market</a><br>
+                  143rd Street and Amsterdam Ave<br>
+                  New York, NY 10128<br>
+                  Season: June-November<br>
+                  Hours: Wed, 11am-6pm
+                </address>
+              </div>
+
+              <div class="item   manhattan june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.3488989912735!2d-73.94450168513886!3d40.84226303757405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f69bf6f303ff%3A0x30d1d79a78471536!2sFort%20Washington%20Greenmarket!5e0!3m2!1sen!2sus!4v1614997354968!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Fort Washington Greenmarket</a><br>
+                  Fort Washington Ave and West 168th St<br>
+                  New York, NY 10032<br>
+                  Season: June-November<br>
+                  Hours: Tues, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.229572211261!2d-73.9465419707824!3d40.78581049870776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a8ea84c565%3A0x419c1981da040a91!2s1908%202nd%20Ave%2C%20New%20York%2C%20NY%2010029!5e0!3m2!1sen!2sus!4v1614997448510!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Metropolitan Farmers' Market</a><br>
+                  2nd Ave. at East 99th St.<br>
+                  New York, NY 10029<br>
+                  Season: June-November<br>
+                  Hours: Fri, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.1789631822456!2d-73.94616727078241!3d40.79026059870773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f6029223c86f%3A0xbc710e1e007f1ce9!2sE%20104th%20St%20%26%203rd%20Ave%2C%20New%20York%2C%20NY%2010029!5e0!3m2!1sen!2sus!4v1614997628814!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home East Harlem Farmers' Market</a><br>
+                  East 104th St and Third Ave<br>
+                  New York, NY 10029<br>
+                  Season: July-November<br>
+                  Hours: Thu, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.7649165074276!2d-73.9549202845927!3d40.789182079323545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a747ba3fd3%3A0x4cd85443bf80c25b!2sMadison%20Ave%20%26%20E%2099th%20St%2C%20New%20York%2C%20NY%2010029!5e0!3m2!1sen!2sus!4v1614997510645!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Mount Sinai Hospital Greenmarket</a><br>
+                  East 99th St and Madison Ave<br>
+                  New York, NY 10029<br>
+                  Season: June-November<br>
+                  Hours: Wed, 8am-5pm
+                </address>
+              </div>
+
+              <div class="item   manhattan july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.06075139331!2d-73.98910277078255!3d40.712666698708226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ1LjYiTiA3M8KwNTknMTguOCJX!5e0!3m2!1sen!2sus!4v1614998561587!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Gouverneur Health GrowNYC Farm Stand</a><br>
+                  227 Madison Street<br>
+                  New York, NY 10002<br>
+                  Season: July-November<br>
+                  Hours: Thu, 9am-2pm
+                </address>
+              </div>
+
+              <div class="item   manhattan july august october yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d377.7698682554685!2d-73.979054!3d40.7585287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259652581ea33%3A0x479c1241a0080c65!2sFAO%20Schwarz!5e0!3m2!1sen!2sus!4v1614998669148!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Rockefeller Center Greenmarket</a><br>
+                  Rockefeller Plaza and West 50th St<br>
+                  New York, NY 10112<br>
+                  Season: July-August; October<br>
+                  Hours: Wed/Thu/Fri, 8am-5pm
+                </address>
+              </div>
+
+              <div class="item   manhattan july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.398192158394!2d-73.94289008514033!3d40.79724284033408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f757e3264913%3A0xb3ea82964572f720!2sPS%2057%20Farmstand!5e0!3m2!1sen!2sus!4v1614998699089!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">PS. 57 GrowNYC Farm Stand</a><br>
+                  115th St. and 3rd Ave<br>
+                  New York, NY 10029<br>
+                  Season: July-November<br>
+                  Hours: Wed, 9:30am-4pm
+                </address>
+              </div>
+
+              <div class="item   manhattan july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d756.0344180235973!2d-73.9836893!3d40.7149857!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2cdaf1e9be4425e4!2sLower%20East%20Side%20Farmstand!5e0!3m2!1sen!2sus!4v1614998740334!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Lower East Side GrowNYC Farm Stand</a><br>
+                  Grand St and Pitt St<br>
+                  New York, NY 10002<br>
+                  Season: July-November<br>
+                  Hours: Thu, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item   manhattan january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.21000617921!2d-73.96180438514024!3d40.80137874008057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f622ab28109b%3A0x6b9b80cecb4b7bbb!2sDown%20to%20Earth%20Morningside%20Park%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1614998786222!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">Morningside Park Farmers' Market</a><br>
+                  265 Manhattan Ave<br>
+                  New York, NY 10025<br>
+                  Season: January-December<br>
+                  Hours: Sat, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item   manhattan  august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4585117175184!2d-73.99327938514269!3d40.729935344456024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2591c9eceff11%3A0x756e72de4044d62d!2sAstor%20Place%20Greenmarket!5e0!3m2!1sen!2sus!4v1614998807778!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  Astor Place Greenmarket<br>
+                  149-179 E 8th St<br>
+                  New York, NY 11218<br>
+                  Season: August-November<br>
+                  Hours: Tues 8am-5pm
+                </address>
+              </div>
+
+              <div class="item   manhattan  august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12079.33025747366!2d-73.95754912155826!3d40.80967301020092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x943f562b8064c209!2sDown%20to%20Earth%20Savoy%20Park%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1614998840705!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">Morningside Park Farmers' Market</a><br>
+                  560 Malcom X Blvd<br>
+                  New York, NY 10037<br>
+                  Season: August-November<br>
+                  Hours: Sat, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item  manhattan august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9939335915396!2d-73.98843400747975!3d40.71815004284755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259812a677755%3A0xb527191e54cca70b!2s115%20Delancey%20St%2C%20New%20York%2C%20NY%2010002!5e0!3m2!1sen!2sus!4v1615003763767!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">Project EATS Essex Crossing Farm Stand</a><br>
+                  115 Delancey St<br>
+                  New York, NY 10002<br>
+                  Season: August-November<br>
+                  Hours: Sat/Sun 10:30am-6pm
+                </address>
+              </div>
+
+              <div class="item  manhattan august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9939335915396!2d-73.98843400747975!3d40.71815004284755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259812a677755%3A0xb527191e54cca70b!2s115%20Delancey%20St%2C%20New%20York%2C%20NY%2010002!5e0!3m2!1sen!2sus!4v1615003763767!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">Project EATS Essex Crossing Farm Stand</a><br>
+                  115 Delancey St<br>
+                  New York, NY 10002<br>
+                  Season: August-November<br>
+                  Hours: Sat/Sun 10:30am-6pm
+                </address>
+              </div>
+
+              <div class="item  brookyln january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.096212192421!2d-73.99245838514386!3d40.69387864666192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4972c3cd8d%3A0xb641b2ab5051c76!2sBrooklyn%20Borough%20Hall%20Greenmarket!5e0!3m2!1sen!2sus!4v1615005324296!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Brooklyn Borough Hall Greenmarket</a><br>
+                  115 Delancey St<br>
+                  Brooklyn, NY 11201<br>
+                  Season: Year-round<br>
+                  Hours: Sat 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  brookyln january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.704259911698!2d-73.99701868514434!3d40.68048474748085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a59d68b2c87%3A0x58163f60a58ce79b!2sCarroll%20Gardens%20Greenmarket!5e0!3m2!1sen!2sus!4v1615005220097!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <a href="http://www.grownyc.org/greenmarket/brooklyn/carroll-gardens">Carroll Gardens Greenmarket</a><br>
+                Carroll St and Court St<br>
+                Brooklyn, NY 11231<br>
+                Season: Year-round<br>
+                Hours: Sun, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item  brookyln january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.1516582275025!2d-73.94774477978505!3d40.62424224445412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244ae2d153ea3%3A0x8388350d55c01647!2s2500%20Nostrand%20Ave.%2C%20Brooklyn%2C%20NY%2011210!5e0!3m2!1sen!2sus!4v1615005180124!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://seedsinthemiddle.org">Seeds in the Middle Farm Stand-Flatbush</a><br>
+                  2500 Nostrand Ave<br>
+                  Brooklyn, NY 11210<br>
+                  Season: Year-round<br>
+                  Hours: Thu 1pm-7pm
+                </address>
+              </div>
+
+              <div class="item  brookyln january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.065776036056!2d-73.97201208514458!3d40.67251964796784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b08156fd4d5%3A0xb50a1a7b1b90c167!2sGrand%20Army%20Plaza%20Greenmarket!5e0!3m2!1sen!2sus!4v1615005255646!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/brooklyn-grand-army-plaza">Grand Army Plaza Greenmarket</a><br>
+                  Flatbush Ave and Grand Army Plaza<br>
+                  Brooklyn, NY 11238<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  brookyln january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.289359563875!2d-73.97523928514404!3d40.68962444692205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a221d8ae6b5%3A0x84d82f4ec4cc732f!2sFort%20Greene%20Park%20Greenmarket!5e0!3m2!1sen!2sus!4v1615005277945!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket/brooklyn/fort-greene">Fort Greene Park Greenmarket</a><br>
+                  Flatbush Ave and Grand Army Plaza<br>
+                  Brooklyn, NY 11205<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.277495527354!2d-74.00460368514555!3d40.645813049599994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b7814763813%3A0x96f9c6298a30cf9c!2s7th%20Ave%20Sunset%20Park%20Greenmarket!5e0!3m2!1sen!2sus!4v1615005307944!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">6th Ave. Sunset Park Greenmarket</a><br>
+                  Flatbush Ave and Grand Army Plaza<br>
+                  Brooklyn, NY 11220<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.277495527354!2d-74.00460368514555!3d40.645813049599994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b7814763813%3A0x96f9c6298a30cf9c!2s7th%20Ave%20Sunset%20Park%20Greenmarket!5e0!3m2!1sen!2sus!4v1615005307944!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">6th Ave. Sunset Park Greenmarket</a><br>
+                  Flatbush Ave and Grand Army Plaza<br>
+                  Brooklyn, NY 11220<br>
+                  Season: Year-round<br>
+                  Hours: Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.3191079259577!2d-73.90974158514484!3d40.666937348309055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c5f3d1cbac7%3A0xdf6c66a598d5444e!2s213%20Osborn%20St%2C%20Brooklyn%2C%20NY%2011212!5e0!3m2!1sen!2sus!4v1615005677403!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://seedsinthemiddle.org">Seeds in the Middle Farm Stand-Brownsville</a><br>
+                  213 Osborn St<br>
+                  Brooklyn, NY 11212<br>
+                  Season: Year-round<br>
+                  Hours: Fri 2pm-5pm
+                </address>
+              </div>
+
+              <div class="item  brookyln may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7142651359595!2d-73.94561298514279!3d40.72430624480057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2594ec9d91db5%3A0x487d41f66855cd85!2sDown%20to%20Earth%20McGolrick%20Park%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1615005779430!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.downtoearthmarkets.com">McGolrick Park Farmers' Market</a><br>
+                  213 Osborn St<br>
+                  Brooklyn, NY 11222<br>
+                  Season: May-December<br>
+                  Hours: Sun, 10am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln may june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.9197789907043!2d-74.00186668514677!3d40.60959355181212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24511e95c25c5%3A0xda3d4dd8348b287f!2sBensonhurst%20Greenmarket!5e0!3m2!1sen!2sus!4v1615005803476!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Bensonhurst Greenmarket</a><br>
+                  8100 18th Ave<br>
+                  Brooklyn, NY 11214<br>
+                  Season: May-November<br>
+                  Hours: Sun, 9am-4pm
+                </address>
+              </div>
+
+              <div class="item  brookyln may june july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96853.48806470788!2d-74.07456636428836!3d40.659171108567264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4077601f917f8261!2sBrooklyn%20Grange%20%40%20Sunset%20Park!5e0!3m2!1sen!2sus!4v1615005825932!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.brooklyngrangefarm.org">Bensonhurst Greenmarket</a><br>
+                  850 3rd Ave<br>
+                  Brooklyn, NY 11232<br>
+                  Season: May-November<br>
+                  Hours: Sun 10am-4pm
+                </address>
+              </div>
+
+              <div class="item  brookyln may june july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17592.715353736763!2d-73.92428301997776!3d40.69737189293729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8c935a75aa656313!2sHope%20Ballfield!5e0!3m2!1sen!2sus!4v1615007001009!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.riseboro.org">Bushwick Hope Ball Field Farmers' Market</a><br>
+                  Knickerbocker Ave<br>
+                  Brooklyn, NY 10301<br>
+                  Season: May-November<br>
+                  Hours: Wed 9am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln may june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.2796153136624!2d-73.90781238459576!3d40.6898390793343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c3be24bff49%3A0xe7e3778b360154e!2s215%20Cooper%20St%2C%20Brooklyn%2C%20NY%2011207!5e0!3m2!1sen!2sus!4v1615006312889!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.bushwickfarmersmarket.org">Bushwick Bethel Farm Stand</a><br>
+                  215 Cooper St.<br>
+                  Brooklyn, NY 11207<br>
+                  Season: May-November<br>
+                  Hours: Thu, 10pm-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln may june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.554903481597!2d-74.03597198514652!3d40.61764295132057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24f8912de169b%3A0x3ad5adb94fb726da!2sBay%20Ridge%20Greenmarket!5e0!3m2!1sen!2sus!4v1615007057625!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Bay Ridge Greenmarket</a><br>
+                  Third Ave and 95th St<br>
+                  Brooklyn, NY 11209<br>
+                  Season: May-November<br>
+                  Hours: Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln may june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17592.715353736763!2d-73.92428301997776!3d40.69737189293729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb039a7c55c18030!2sRB%20Bushwick%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1615007031353!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.riseboro.org">Bushwick Maria Hernandez Pk Farmers' Market</a><br>
+                  Third Ave and 95th St<br>
+                  Brooklyn, NY 11206<br>
+                  Season: May-November<br>
+                  Hours: Sat, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.5013440221938!2d-73.9453109707826!3d40.673850498708546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b83a77ae13f%3A0x724ff75642acea6f!2s960%20Prospect%20Pl%2C%20Brooklyn%2C%20NY%2011213!5e0!3m2!1sen!2sus!4v1615007410068!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Brower Park Farm Stand</a><br>
+                  Prospect Place and Brooklyn Ave.<br>
+                  Brooklyn, NY 11213<br>
+                  Season: June-November<br>
+                  Hours: Thu, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln june july august september october yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6053.190231131961!2d-73.90643312546722!3d40.66085465604618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45cd7b83d33178a!2sIsabahlia%20Framers%20Market!5e0!3m2!1sen!2sus!4v1615008212444!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.isabahlialoefinc.org">Isabahlia Farm Stand-Livonia Ave</a><br>
+                  410 Livonia Ave<br>
+                  Brooklyn, NY 11212<br>
+                  Season: June-October<br>
+                  Hours: Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln june july august september october yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.295206835881!2d-73.91267268514477!3d40.66746404827694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c5fba5d1009%3A0xd14e29ae38c50f43!2s514%20Rockaway%20Ave%2C%20Brooklyn%2C%20NY%2011212!5e0!3m2!1sen!2sus!4v1615008286021!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.isabahlialoefinc.org">Isabahlia Farm Stand-Rockaway Ave</a><br>
+                  514 Rockaway Avenue<br>
+                  Brooklyn, NY 11212<br>
+                  Season: June-October<br>
+                  Hours: Fri/Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10624.915579857807!2d-73.89152843042592!3d40.66011429643132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc834d867d38540c4!2sENY%20Farmer&#39;s%20Market%20Sats%209-3!5e0!3m2!1sen!2sus!4v1615008502776!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.eastnewyorkfarms.org">East New York Farmers' Market</a><br>
+                  613 New Lots Ave<br>
+                  Brooklyn, NY 11207<br>
+                  Season: June-November<br>
+                  Hours: Sat, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.0680588424357!2d-74.01200818503601!3d40.67246934797072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a8d00b97511%3A0xa96fa19c32220715!2sRed%20Hook%20Community%20Farms!5e0!3m2!1sen!2sus!4v1615008532344!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.added-value.org/farmers-market">Red Hook Farm Stand</a><br>
+                  560 Columbia St<br>
+                  Brooklyn, NY 11231<br>
+                  Season: June-November<br>
+                  Hours: Sat, 10am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.7076548358457!2d-73.94362447078268!3d40.65566399870862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b641e8d9d1f%3A0x30752f0bda2388b9!2s492%20Clarkson%20Ave%2C%20Brooklyn%2C%20NY%2011203!5e0!3m2!1sen!2sus!4v1615007479211!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Kings Co. Hospital Farmers' Market</a><br>
+                  511 Clarkson Ave<br>
+                  Brooklyn, NY 11203<br>
+                  Season: June-November<br>
+                  Hours: Wed, 8am-6pm
+                </address>
+              </div>
+
+              <div class="item  brookyln june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.0316776828463!2d-73.96764918459891!3d40.58505617934595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2445b5c4f0fc9%3A0x9282950359982040!2s2601%20Ocean%20Pkwy%2C%20Brooklyn%2C%20NY%2011235!5e0!3m2!1sen!2sus!4v1615007533850!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Coney Island Farm Stand</a><br>
+                  Ocean Pkwy and Avenue Z<br>
+                  Brooklyn, NY 11235<br>
+                  Season: June-November<br>
+                  Hours: Fri, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6051.529054280629!2d-73.916116!3d40.679157!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c68e2d38e31%3A0xd96d5efb5c295aca!2s1965%20Fulton%20St%2C%20Brooklyn%2C%20NY%2011233!5e0!3m2!1sen!2sus!4v1615008747232!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.tcahnyc.org/">Saratoga Farm Stand</a><br>
+                  1965 Fulton Street<br>
+                  Brooklyn, NY 11233<br>
+                  Season: July-November<br>
+                  Hours: Sat, 9am-2pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48412.18315435066!2d-73.94675820796586!3d40.67922485621107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4972c3cd8d%3A0xb641b2ab5051c76!2sBrooklyn%20Borough%20Hall%20Greenmarket!5e0!3m2!1sen!2sus!4v1615008815031!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Borough Park Greenmarket</a><br>
+                  14th Ave and 49th St<br>
+                  Brooklyn, NY 11219<br>
+                  Season: July-November<br>
+                  Hours: Thu, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48427.82279497335!2d-73.94721068314074!3d40.65768507404305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ab359b25a69f64d!2sBrownsville%20Pitkin%20Farmstand!5e0!3m2!1sen!2sus!4v1615008844785!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Brownsville Pitkin GrowNYC Farm Stand</a><br>
+                  Pitkin Avenue and Thomas Boyland Street<br>
+                  Brooklyn, NY 11212<br>
+                  Season: July-November<br>
+                  Hours: Sat, 9am-2pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.854948033979!2d-73.94970718514595!3d40.63308075037779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b529e231eed%3A0x644ad4ac697bea29!2sFlatbush%20Junction%20Farmstand%20--%20Seasonal!5e0!3m2!1sen!2sus!4v1615008865968!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Flatbush Junction GrowNYC Farm Stand</a><br>
+                  Flatbush Ave and Nostrand Ave<br>
+                  Brooklyn, NY 11210<br>
+                  Season: July-November<br>
+                  Hours: Sat, 9am-2pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.7905150613215!2d-73.94407758487583!3d40.70061107933318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAyLjIiTiA3M8KwNTYnMzAuOCJX!5e0!3m2!1sen!2sus!4v1615086708657!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Kensington GrowNYC Farm Stand</a><br>
+                  Marcus Garvey Boulevard and Broadway<br>
+                  Brooklyn, NY 11206<br>
+                  Season: July-November<br>
+                  Hours: Wed, 9am-2pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.7905150613215!2d-73.94407758487583!3d40.70061107933318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAyLjIiTiA3M8KwNTYnMzAuOCJX!5e0!3m2!1sen!2sus!4v1615086708657!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Woodhull Hospital GrowNYC Farm Stand</a><br>
+                  14th Ave and 49th St<br>
+                  Brooklyn, NY 11218<br>
+                  Season: July-November<br>
+                  Hours: Sat, 8:30am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12098.846925516838!2d-73.942381!3d40.702346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a859eda6f50a956!2sGraham%20Avenue%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1615009086557!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grahamavenuebid.net">Graham Avenue Farmers' Market</a><br>
+                  Graham Ave and Cook St<br>
+                  Brooklyn, NY 11206<br>
+                  Season: July-October<br>
+                  Hours: Sat, 9am-5pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.277495527354!2d-74.00460368514555!3d40.645813049599994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b7814763813%3A0x96f9c6298a30cf9c!2s7th%20Ave%20Sunset%20Park%20Greenmarket!5e0!3m2!1sen!2sus!4v1615009173622!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">4th Ave. Sunset Park Greenmarket</a><br>
+                  4th Ave and 60th St<br>
+                  Brooklyn, NY 11220<br>
+                  Season: July-November<br>
+                  Hours: Sat, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4019.6546857075255!2d-73.94532348480688!3d40.689684335614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x797ca6e6cfae5c77!2sHattie%20Carthan%20Community%20Garden!5e0!3m2!1sen!2sus!4v1615009130206!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.hattiecarthancommunitymarket.com">Hattie Carthan Community Farmers' Market</a><br>
+                  365 Clifton Pl<br>
+                  Brooklyn, NY 11216<br>
+                  Season: July-November<br>
+                  Hours: Sat, 9am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.100703172227!2d-73.89743158514466!3d40.67175004801497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c518ee5cc97%3A0x28cd496c1eb096af!2s2094%20Pitkin%20Ave%2C%20Brooklyn%2C%20NY%2011207!5e0!3m2!1sen!2sus!4v1615009942227!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.projecteats.org">Project EATS H&H Farmacy Farm Stand</a><br>
+                  2094 Pitkin Avenue<br>
+                  Brooklyn, NY 11207<br>
+                  Season: August-November<br>
+                  Hours: Wed, 10am-3pm
+                </address>
+              </div>
+
+              <div class="item  brookyln august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.5054840914536!2d-73.91138538514494!3d40.66283004856005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25cf453fc9cb9%3A0x1386860beb1c4861!2s702%20Rockaway%20Ave%2C%20Brooklyn%2C%20NY%2011212!5e0!3m2!1sen!2sus!4v1615009990424!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.projecteats.org">Project EATS Rockaway Farm Stand</a><br>
+                  702 Rockaway Avenue<br>
+                  Brooklyn, NY 11212<br>
+                  Season: August-November<br>
+                  Hours: Fri, 8am-7pm
+                </address>
+              </div>
+
+              <div class="item  bronx january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.534183929616!2d-73.88261088513747!3d40.88209573512984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f30c4a26f34b%3A0x4303234fc761df1!2sNorwood%20Farmstand!5e0!3m2!1sen!2sus!4v1615010036544!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://awww.grownyc.org/farmstands">Norwood GrowNYC Farm Stand</a><br>
+                  Dekalb Ave. and East Gun Hill Rd.<br>
+                  Bronx, NY 10467<br>
+                  Season: Year-round<br>
+                  Hours: Thu, 8:30am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx  january february march april may june july august september october november december yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1509.7299552838217!2d-73.9247682!3d40.8178607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f5cc9f1c3353%3A0x409c268c9a4e639c!2sLincoln%20Hospital%20Greenmarket!5e0!3m2!1sen!2sus!4v1615010234839!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Lincoln Hospital Greenmarket</a><br>
+                  East 149th St and Morris Ave<br>
+                  Bronx, NY 10451<br>
+                  Season: August-November<br>
+                  Hours: Tues/Fri, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  bronx june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d512.4251108199405!2d-73.90997704224412!3d40.84288965780252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f44032a7234b%3A0xf521cc6a0211f53d!2sMorris%20Ave%20%26%20E%20Mt%20Eden%20Ave%2C%20The%20Bronx%2C%20NY%2010457!5e0!3m2!1sen!2sus!4v1615007800940!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Mt. Eden Farmers' Market</a><br>
+                  Mt Eden Pkwy and Morris Ave<br>
+                  Bronx, NY 10457<br>
+                  Season: June-November<br>
+                  Hours: Tue/Thu, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d754.6765860235992!2d-73.8631111!3d40.8344134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4c2789a5980b96dc!2sParkchester%20Greenmarket!5e0!3m2!1sen!2sus!4v1615010333744!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Parkchester Greenmarket</a><br>
+                  White Plains Rd & Westchester Ave<br>
+                  Bronx, NY 10472<br>
+                  Season: June-November<br>
+                  Hours: Fri, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.9130115519417!2d-73.91157707078236!3d40.813639398707565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f5b822074adf%3A0xb692d3dc20b0a038!2s646%20E%20149th%20St%2C%20The%20Bronx%2C%20NY%2010455!5e0!3m2!1sen!2sus!4v1615007823983!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home St. Marys Park Farm Stand</a><br>
+                  646 E 149th St<br>
+                  Bronx, NY 10455<br>
+                  Season: June-November<br>
+                  Hours: Thu, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.34943448531!2d-73.89791798459038!3d40.86420507931566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f386c4d98f61%3A0x1ca7c1a60915e7c5!2sGrand%20Concourse%20%26%20E%20192nd%20St%2C%20The%20Bronx%2C%20NY%2010458!5e0!3m2!1sen!2sus!4v1615010373471!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/">Poe Park Greenmarket</a><br>
+                  2580 Grand Concourse<br>
+                  Bronx, NY 10458<br>
+                  Season: June-November<br>
+                  Hours: Tues, 8am-3pm
+                </address>
+              </div>
+
+              <div class="item  bronx june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.06345591865!2d-73.92449968513938!3d40.8265698385365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f43293b219f7%3A0xb1cc13e9d83dc1a1!2sBronx%20Borough%20Hall%20Greenmarket!5e0!3m2!1sen!2sus!4v1615010407273!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Bronx Borough Hall Greenmarket</a><br>
+                  901 Grand Concourse<br>
+                  Bronx, NY 10451<br>
+                  Season: June-November<br>
+                  Hours: Tues, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.8324884764302!2d-73.89118677078234!3d40.8207156987075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f546f1d49249%3A0xf742dc31c1b29829!2sMonsignor%20Raul%20Del%20Valle%20Square!5e0!3m2!1sen!2sus!4v1615007878495!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Hunts Point Farmers' Market</a><br>
+                  901 Grand Concourse<br>
+                  Bronx, NY 10474<br>
+                  Season: June-November<br>
+                  Hours: Wed, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx june july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.2740955325385!2d-73.83163007078225!3d40.86975899870718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28cb7908f6965%3A0x570ef437b0b1b072!2s21%20Asch%20Loop%2C%20The%20Bronx%2C%20NY%2010475!5e0!3m2!1sen!2sus!4v1615007925141!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Co-op City Farm Stand</a><br>
+                  199 Aldrich St.<br>
+                  Bronx, NY 10475<br>
+                  Season: June-November<br>
+                  Hours: Wed, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx june july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.0950778722067!2d-73.91497108513711!3d40.891729234538445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f3c0b0ef5023%3A0xf0c1e51e249af836!2sRiverdale%20Y%20Sun%20Market!5e0!3m2!1sen!2sus!4v1615010458970!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.riverdaley.org/community/Sun-market">Riverdale Y Sun Farmers' Market</a><br>
+                  649 W 237th St<br>
+                  Bronx, NY 10463<br>
+                  Season: June-November<br>
+                  Hours: Sun, 9am-2pm
+                </address>
+              </div>
+
+              <div class="item  bronx july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.2116850919356!2d-73.89765968459096!3d40.84527597931773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDUwJzQzLjAiTiA3M8KwNTMnNDMuNyJX!5e0!3m2!1sen!2sus!4v1615010647265!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.lafamiliaverde.org">La Familia Verde Farmers' Market</a><br>
+                  East Tremont Ave and Arthur Ave<br>
+                  Bronx, NY 10457<br>
+                  Season: July-November<br>
+                  Hours: Tues, 8am-2pm
+                </address>
+              </div>
+
+              <div class="item  bronx july august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.3033771674895!2d-73.92701088513951!3d40.82129953885958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f584da3937d5%3A0xfbe6cd151a023d3c!2sNew%20Roots%20Community%20Farm!5e0!3m2!1sen!2sus!4v1615010479634!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  New Roots Community Farm Stand
+                  670 Grand Concourse<br>
+                  Bronx, NY 10451<br>
+                  Season: July-October<br>
+                  Hours: Tues, 3pm-7pm
+                </address>
+              </div>
+
+              <div class="item  bronx july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.1001365259694!2d-73.84357497078223!3d40.88502779870708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDUzJzA2LjEiTiA3M8KwNTAnMzQuOSJX!5e0!3m2!1sen!2sus!4v1615010556653!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org">Eastchester GrowNYC Farm Stand</a><br>
+                  E 229th St at Schieffelin Ave<br>
+                  Bronx, NY 10466<br>
+                  Season: July-November<br>
+                  Hours: Thu 9:30am-3pm
+                </address>
+              </div>
+
+              <div class="item  bronx july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12075.426081045953!2d-73.9007739!3d40.8311151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdc89320ed43213b!2sLearn%20It%20Grow%20It%20Eat%20It%20Youthmarket!5e0!3m2!1sen!2sus!4v1615010887720!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="https://www.grownyc.org/farmstands">Learn it, Grow it, Eat it GrowNYC Farm Stand</a><br>
+                  E. 169th St. and Boston Rd.<br>
+                  Bronx, NY 10456<br>
+                  Season: July-November<br>
+                  Hours: Wed, 10am-3pm
+                </address>
+              </div>
+
+              <div class="item  bronx july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.4960219155987!2d-73.89325438513822!3d40.86098753642526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f31c566b1b93%3A0x3d406c1c2d6276c7!2sFordham%20Plaza%20Greenmarket!5e0!3m2!1sen!2sus!4v1615010911446!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.grownyc.org/greenmarket">Fordham Plaza Greenmarket</a><br>
+                  1 Fordham Plaza<br>
+                  Bronx, NY 10458<br>
+                  Season: July-November<br>
+                  Hours: Fri, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx july august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.73794832692!2d-73.84842498459062!3d40.85567687931653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f354292ea335%3A0xd8b7dc9c85f3c7c!2s1400%20Pelham%20Pkwy%20S%2C%20The%20Bronx%2C%20NY%2010461!5e0!3m2!1sen!2sus!4v1615007966613!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.harvesthomefm.org">Harvest Home Jacobi Hospital Fri Farmers Market</a><br>
+                  1400 Pelham Parkway<br>
+                  Bronx, NY 10461<br>
+                  Season: July-November<br>
+                  Hours: Fri, 8am-4pm
+                </address>
+              </div>
+
+              <div class="item  bronx august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.842554484439!2d-73.89288948513847!3d40.853380436892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f47d19472709%3A0x8fcf4bd7c3da41f!2s4422%203rd%20Ave.%2C%20The%20Bronx%2C%20NY%2010456!5e0!3m2!1sen!2sus!4v1615010963176!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.projecteats.org">Project EATS St. Barnabas</a><br>
+                  4522 Third Ave.<br>
+                  Bronx, NY 10457<br>
+                  Season: August-November<br>
+                  Hours: Wed 10am-7pm
+                </address>
+              </div>
+
+              <div class="item  bronx august september october november yes-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.4470358071476!2d-73.91858408513895!3d40.84010803770617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f43ec8a04bbf%3A0xa6c0ba4ab284c611!2s1406%20Townsend%20Ave%2C%20The%20Bronx%2C%20NY%2010452!5e0!3m2!1sen!2sus!4v1615011079212!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.newsettlement.org/170FarmStand">170 Farm Stand</a><br>
+                  1406 Townsend Ave. and 170th Street<br>
+                  Bronx, NY 10452<br>
+                  Season: August-November<br>
+                  Hours: Wed, 2:30-6:30pm
+                </address>
+              </div>
+
+              <div class="item  bronx august september october november no-snap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.678925299016!2d-73.8490574851368!3d40.90085743397802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f2d3d21576b1%3A0x73492fa295117b92!2sThe%20Market%20at%20Bissel%20Gardens!5e0!3m2!1sen!2sus!4v1615011103338!5m2!1sen!2sus"
+                  width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <address>
+                  <a href="http://www.bisselgardens.org">Bissel Gardens Farmers' Market-Sat</a><br>
+                  Baychester Ave and East 241st St<br>
+                  Bronx, NY 10470<br>
+                  Season: August-November<br>
+                  Hours: Sat, 10am-4pm
+                </address>
+              </div>
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+  </body>
+
+</html>
