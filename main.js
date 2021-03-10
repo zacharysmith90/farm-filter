@@ -44,7 +44,18 @@ function filter_snap() {
 	/**
 	 * Show items that match the dropdowns
 	 */
-	const filtered_items = document.querySelectorAll(`.item.${borough_class}.${month_class}.${snap_class}`);
+	let selector = ".item";
+	if (borough_class !== "") {
+		selector = `${selector}.${borough_class}`;
+	}
+	if (month_class !== "") {
+		selector = `${selector}.${month_class}`;
+	}
+	if (snap_class !== "") {
+		selector = `${selector}.${snap_class}`;
+	}
+
+	const filtered_items = document.querySelectorAll(selector);
 
 	filtered_items.forEach(function (item) {
 		item.classList.add("active");
