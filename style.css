@@ -94,7 +94,7 @@ select {
 }
 
 .flex.filter div {
-    flex-basis: 100%;
+    flex-basis: 40%;
 }
 
 /* Tablet/Desktop overrides */
