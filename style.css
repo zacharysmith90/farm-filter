@@ -28,6 +28,10 @@ html, body {
     max-width: 1200px;
 }
 
+.container.photo {
+    max-width: 100%
+}
+
 /*
 
 /* TC— Last time you knocked a point off for the hed image not being full screen. I don't know why it won't be full screen in this environment. It's at 100% for desktop, but not mobile. What's going on? */
@@ -117,7 +121,7 @@ select {
 }
 
 .flex .item {
-    flex-basis: 40%;
+    flex-basis: 55%;
 }
 
 .flex.filter div {
