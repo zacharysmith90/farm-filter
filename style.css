@@ -117,7 +117,7 @@ select {
 }
 
 .flex .item {
-    flex-basis: 24%;
+    flex-basis: 40%;
 }
 
 .flex.filter div {
