@@ -71,10 +71,6 @@ select {
     margin-bottom: 16px;
 }
 
-.flex.filter div {
-    flex-basis: 100%;
-}
-
 .flex .item {
     flex-basis: 48%;
     display: none;
@@ -95,6 +91,10 @@ select {
 .flex .item.empty {
     flex-basis: 100%;
     text-align: center;
+}
+
+.flex.filter div {
+    flex-basis: 100%;
 }
 
 /* Tablet/Desktop overrides */
@@ -118,14 +118,14 @@ select {
     .flex-image {
         flex-basis: 33%;
     }
-}
 
-.flex .item {
-    flex-basis: 55%;
-}
+    .flex .item {
+        flex-basis: 55%;
+    }
 
-.flex.filter div {
-    flex-basis: 30%;
+    .flex.filter div {
+        flex-basis: 30%;
+    }
 }
 
 @media(min-width: 729px) {
